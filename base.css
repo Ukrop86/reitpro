@@ -1,0 +1,30 @@
+/* base.css */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #282c34;
+    color: #ffffff;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: auto;
+    overflow: hidden;
+  
+}
+
+.title {
+    font-size: 36px;
+    margin: 20px 0;
+    color: #ffcc00;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    font-weight: normal;
+}
+
+

@@ -1,0 +1,114 @@
+/* layout.css */
+.box {
+    width: calc(100% - 40px);
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #444851;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    color: #ffffff;
+    overflow: hidden;
+    border: 2px solid #ffcc00;
+    font-size: 22px;
+    font-weight: normal;
+    padding-bottom: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.box:hover {
+    background-color: #555b60;
+}
+
+.box:last-child {
+    margin-bottom: 0;
+}
+
+.box.expanded {
+    height: auto;
+    padding: 25px;
+    background-color: #555b60;
+}
+
+.box-content {
+    display: none;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: left;
+    margin-bottom: 30px;
+  
+}
+
+.box.expanded .box-content {
+    display: block;
+    font-size: 18px;
+    color: #ffffff;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+/* components.css */
+.box::before {
+    content: 'Докладніше...';
+    font-size: 14px;
+    color: #ffcc00;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    
+}
+
+.box.expanded::before {
+    opacity: 0;
+}
+
+.app-link {
+    display: none;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #ffcc00;
+    color: #000000;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.app-link:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+
+.box.expanded .app-link {
+    display: block;
+}
+
+/* Стилі для вкладок */
+.tab-content {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #444851;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    position: relative;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: normal;
+    padding-bottom: 30px;
+    overflow-y: auto;
+    border: 2px solid #ffcc00;
+    -webkit-tap-highlight-color: transparent;
+    
+}
+/* Приховати полосу прокрутки для WebKit-браузерів */
+.tab-content::-webkit-scrollbar {
+    display: none; /* Приховує скролбар */
+}
