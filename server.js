@@ -1,7 +1,7 @@
 const express = require('express');
 const path = require('path');
 const app = express();
-const port = process.env.PORT || 1234;
+const port = process.env.PORT || 3000 ;
 
 // Налаштування статичних файлів
 app.use(express.static(path.join(__dirname, './')));
