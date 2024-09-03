@@ -1,0 +1,29 @@
+/* icons.css */
+.icons {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+
+.icon-wrapper {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 24px; /* Розмір іконок */
+}
+
+.icon-wrapper i {
+    display: inline-block;
+    font-size: 14px; /* Розмір іконок */
+    font-style: normal; /* Переконатися, що іконки не похилі */
+    color: #ffffff; /* Колір іконок */
+    margin-right: 5px; /* Відступ між іконкою і лічильником */
+}
+
+.count {
+    font-size: 14px; /* Розмір шрифту для лічильників */
+    color: #ffffff; /* Колір тексту для лічильників */
+}
